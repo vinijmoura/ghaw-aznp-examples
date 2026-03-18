@@ -1,0 +1,10 @@
+# Build results
+**/[Bb]in/
+**/[Oo]bj/
+
+# User-specific files
+*.user
+*.rsuser
+
+# VS Code
+.vscode/
