@@ -1,9 +1,7 @@
 ---
 description: |
   This workflow generates or updates documentation for GitHub Actions workflow YML files.
-  Whenever a YML file is changed in .github/workflows, this workflow creates or updates
-  a corresponding markdown documentation file in the docs folder, describing step by step
-  all the steps inside each YML.
+  Whenever a YML file is changed in .github/workflows, this workflow creates or updates a corresponding markdown documentation file in the docs folder, describing step by step all the steps inside each YML.
 
 on:
   push:
@@ -47,7 +45,7 @@ Generate or update markdown documentation in the `docs/` folder for every GitHub
 
 2. **For each identified YML file** (e.g., `.github/workflows/build-and-deploy.yml`):
    a. Read its content with `cat <filepath>`.
-   b. Carefully analyse the YAML structure: workflow name, triggers (`on:`), permissions, jobs, and every step inside each job.
+   b. Carefully analyse the YAML structure: workflow name, triggers (`on:`), permissions, jobs, and every step inside each job. Create a flow based on memrmaid diagram that exemplify YAML structure.
    c. Write a documentation file to `docs/<filename-without-extension>.md` (e.g., `docs/build-and-deploy.md`) using the edit tool.
 
 3. **Documentation format** — each `docs/<name>.md` file must follow this structure exactly:
